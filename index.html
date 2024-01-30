@@ -5,8 +5,8 @@
     <link rel="icon" href="./images/main.jpeg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scott</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Scott Marsden</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -33,10 +33,23 @@
           >
         </li>
       </div>
+      <div class="switcher">
+        <button class="switcher-theme-name">
+        Dark
+        </button>
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+        </label>
+        <button class="switcher-theme-name">
+        Light
+        </button>
+    </div>
+
     </header>
 
     <section id="landing-page-0" class="landing-page-0">
-      <div class="container-0">
+      <div class="container-0 container">
         <div class="home-content">
           <h3>Hello my name is <span class="gradient">Scott Marsden</span></h3>
           <div class="img-mobile">
@@ -68,15 +81,15 @@
     </section>
 
     <section id="landing-page-1" class="landing-page-1">
-      <div class="container-1">
+      <div class="container-1 container">
         <h1 class="title">Experience</h1>
-        <h3 style="color:white">
+        <h3 class="description">
           Scott Marsden's diverse professional background, coupled with his
           academic achievements, reflects a commitment to education, effective
           leadership, and comprehensive student support.
         </h3>
         <br />
-        <p style="color:white; margin-bottom:30px">
+        <p class="description-text" style="margin-bottom:30px">
           Scott Marsden is the Director of Student Services at Acsenda School of
           Management, based in Vancouver, British Columbia, Canada. He holds a
           prominent position overseeing the Student Services Department for both
@@ -189,7 +202,7 @@
 
 
     <section id="landing-page-2" class="landing-page-2">
-      <div class="container-2">
+      <div class="container-2 container">
         <h1 class="title">Skills</h1>
 
         <div class="skills">
@@ -273,7 +286,7 @@
     </section>
 
     <section id="landing-page-3" class="landing-page-3">
-      <div class="container-3">
+      <div class="container-3 container">
         <h1 class="title">Get In Touch</h1>
         <div class="contact-box">
           <div class="contact-text">
@@ -286,7 +299,6 @@
             </div>
             <div class="social-icon">
               <!-- <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a> -->
-              <!-- <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a> -->
               <a
                 href="https://www.linkedin.com/in/scott-marsden-0401b770/"
                 target="_blank"
@@ -295,7 +307,7 @@
               ></a>
             </div>
           </div>
-          <div class="contact-form">
+          <form action="#" id="form"class="contact-form" name="contact" method="POST" data-netlify="true">
             <label for="name">Enter Your Name</label>
             <input type="text" name="name" id="name" placeholder="Scott" />
             <label for="email">Enter Your Email</label>
@@ -317,7 +329,7 @@
             <button class="contact-btn send-message">
               Send Message<i class="fa-solid fa-paper-plane"></i>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -340,7 +352,18 @@
        
       </p>
     </footer>
-  </body>
+
+    <!-- Back to top button -->
+  <button type="button"
+  class="btn btn-gotop d-inline-flex align-items-center justify-content-center"
+  data-action="gotop"
+>
+  <i class="fas fa-chevron-up"></i>
+</button>
+    
+  <script src="./js/app.js"></script>
+  <script src="./js/top.js"></script>
+  <script src="./js/switcher.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
     referrerpolicy="no-referrer"
@@ -351,10 +374,11 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  <script src="./app.js"></script>
   <script
     src="https://code.jquery.com/jquery-3.6.4.js"
     integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
     crossorigin="anonymous"
   ></script>
+  </body>
+
 </html>
