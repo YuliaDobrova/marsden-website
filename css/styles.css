@@ -659,15 +659,19 @@ footer p {
 .footer {
   color: var(--theme-text);
   text-align: center;
+  font-size: 14px;
 }
 .developer-text {
   text-align: center;
   font-weight: normal;
+  font-size: 14px;
   color: var(--theme-text);
 }
 .developer-link {
   color: var(--theme-accent);
   text-decoration: none;
+  font-style: italic;
+  font-size: 14px;
 }
 .developer-link:hover {
   text-shadow: 1px 1px 1px var(--theme-bgd), 3px 3px 3px var(--theme-accent);
@@ -772,17 +776,16 @@ body {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   opacity: 0;
   transition: opacity 0.5s;
+}
+.btn-gotop.show {
+  opacity: 1;
+}
 
-  &.show {
-    opacity: 1;
-  }
+i {
+  font-size: 24px;
+}
 
-  i {
-    font-size: 24px;
-  }
-
-  &:hover {
-    border: 1.5px solid var(--theme-accent);
-    background-color: var(--theme-accent);
-  }
+.btn-gotop:hover {
+  border: 1.5px solid var(--theme-accent);
+  background-color: var(--theme-accent);
 }
